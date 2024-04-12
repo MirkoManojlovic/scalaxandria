@@ -9,4 +9,4 @@ This repo contains an Obsidian vault (in plain English a collection of plain tex
 📝 List of topics
 - [[Variables]]
 - [[Classes]]
-- [[Options]]
+- [[option]]

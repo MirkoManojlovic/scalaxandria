@@ -1,10 +1,16 @@
-# Options
+# Option
+
+Option is a Scala typed used to model a scenario where there is no value present. It can help for start to think of it as a replacement for `null`, or as a list with just one element.
+
+
+### Coming from Java
+The equivalent of Option in Scala is Optional in Java.
 
 ##### Create an option
 ```scala
-val optionNumber1 = Option("John")
-val optionNumber2 = Some("John")
-val optionNumber3 = None
+val option1 = Option("John")
+val option2 = Some("John")
+val option3 = None
 ```
 
 ##### Get value from an option
@@ -22,7 +28,6 @@ nameOpt.fold("UNKNOWN")(name => name.toUpperCase())
 
 ##### Chaining two options
 ```scala
-
 def findById(id: Long): Option[String] =
   Some("Titanic")
 
