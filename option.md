@@ -93,7 +93,8 @@ val serverAddress = serverAddressOpt.getOrElse("remoteHost")
 s"$serverAddress:$port" // localhost:9090  
 ```
 
-##### Using orElse with comprehension
+##### Using orElse with comprehension 
+This is not really working in parallel since every time you have a [[for_compershension]] you are working with a flatMap
 ```scala
 val serverPortOpt: Option[Int] = Some(9090)  
 val serverAddressOpt: Option[String] = Some("localhost")  
